@@ -128,15 +128,6 @@ function kruskal(distMatrix) {
    Elige qué paquetes cargar maximizando el valor sin pasar
    la capacidad de PESO ni de VOLUMEN del vehículo.
 
-   Recurrencia:  dp[i][w][v] = max( dp[i-1][w][v],
-                                    val_i + dp[i-1][w-w_i][v-v_i] )
-
-   La tabla se discretiza en STEPS x STEPS celdas (peso y volumen se
-   redondean al entero más cercano). Como el redondeo puede errar por
-   unas décimas de celda, seleccionarCarga() revalida después con los
-   valores EXACTOS de peso/volumen y con el empaquetado 3D.
-   Complejidad: O(n · STEPS²) tiempo, O(n · STEPS²) memoria (para reconstruir).
-   items = [{weight (kg), volume (m³), value}]  →  devuelve índices elegidos
    ═══════════════════════════════════════════════ */
 function knapsack2D(items, maxWeight, maxVolume, STEPS = 120) {
   const n = items.length;

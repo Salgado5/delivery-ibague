@@ -1,0 +1,123 @@
+// Generado desde datos/paquetes_ibague.csv (para poder abrir index.html sin servidor)
+const DEMO_CSV_IBAGUE = `id,direccion,tipo,peso_kg,alto_cm,ancho_cm,profundidad_cm,lat,lon,prioridad
+P001,"Alaska, Ibagué",sobre,0.5,3,24,35,4.43658,-75.24084,alta
+P002,"Santa Helena, Ibagué",sobre,0.1,3,32,40,4.4243,-75.19553,alta
+P003,"Picaleña, Ibagué",sobre,0.37,1,24,32,4.41105,-75.18434,media
+P004,"Piedra Pintada, Ibagué",sobre,0.22,3,32,32,4.44832,-75.20785,media
+P005,"Santa Helena, Ibagué",sobre,0.08,3,32,35,4.42698,-75.19462,media
+P006,"Alaska, Ibagué",caja,4.8,22,20,17,4.43272,-75.23661,media
+P007,"Alaska, Ibagué",caja,3.1,20,28,39,4.43484,-75.2417,baja
+P008,"Interlaken, Ibagué",caja,20.6,61,68,65,4.40081,-75.20815,media
+P009,"Boquerón, Ibagué",caja,113.1,74,110,93,4.45264,-75.24835,media
+P010,"Café Ibagué, Ibagué",caja,5.1,26,29,20,4.46428,-75.22591,media
+P011,"Santa Helena, Ibagué",sobre,0.27,1,32,40,4.43015,-75.19797,media
+P012,"Combeima, Ibagué",caja,7.1,26,28,36,4.44207,-75.19745,baja
+P013,"Piedra Pintada, Ibagué",caja,2.6,20,33,23,4.44666,-75.20779,alta
+P014,"Mirolindo, Ibagué",sobre,0.52,3,24,35,4.41888,-75.21345,baja
+P015,"Arkala, Ibagué",caja,24.3,37,46,58,4.42018,-75.23185,alta
+P016,"La Pola, Ibagué",caja,127.4,71,119,94,4.43812,-75.23897,media
+P017,"Piedra Pintada, Ibagué",caja,44.7,62,43,76,4.45108,-75.20136,media
+P018,"Boquerón, Ibagué",caja,14.0,61,55,89,4.45049,-75.25085,alta
+P019,"Mirolindo, Ibagué",sobre,0.34,2,24,45,4.41517,-75.21165,media
+P020,"El Salado, Ibagué",caja,38.0,42,60,84,4.45685,-75.19222,baja
+P021,"Santa Helena, Ibagué",caja,6.0,30,31,26,4.43045,-75.19245,baja
+P022,"Combeima, Ibagué",caja,2.2,26,26,17,4.43878,-75.20245,media
+P023,"Santa Helena, Ibagué",caja,20.7,50,40,86,4.4267,-75.19514,media
+P024,"Jordán, Ibagué",caja,20.3,48,45,85,4.46328,-75.21074,baja
+P025,"Arkala, Ibagué",sobre,0.14,1,32,32,4.42071,-75.22905,media
+P026,"Café Ibagué, Ibagué",caja,94.8,79,102,125,4.46845,-75.22783,alta
+P027,"Jordán, Ibagué",caja,61.3,71,93,106,4.46021,-75.20953,media
+P028,"Alaska, Ibagué",sobre,0.55,3,35,35,4.43107,-75.24065,media
+P029,"Interlaken, Ibagué",sobre,0.13,1,24,35,4.40712,-75.20647,media
+P030,"Piedra Pintada, Ibagué",caja,27.6,56,50,78,4.44738,-75.20521,media
+P031,"Jordán, Ibagué",sobre,0.07,2,24,45,4.46307,-75.21655,media
+P032,"Cádiz, Ibagué",caja,26.8,43,62,73,4.42855,-75.2141,baja
+P033,"Picaleña, Ibagué",caja,1.5,21,32,29,4.41159,-75.18199,alta
+P034,"Café Ibagué, Ibagué",caja,1.7,18,24,39,4.46453,-75.22363,baja
+P035,"Mirolindo, Ibagué",caja,1.7,27,18,30,4.41514,-75.20894,media
+P036,"Picaleña, Ibagué",caja,1.2,26,21,25,4.40729,-75.18555,media
+P037,"Alaska, Ibagué",sobre,0.23,1,35,45,4.43343,-75.24048,alta
+P038,"Picaleña, Ibagué",caja,1.5,23,20,39,4.41377,-75.18816,media
+P039,"Combeima, Ibagué",caja,10.1,37,50,62,4.43825,-75.19971,media
+P040,"Interlaken, Ibagué",sobre,0.1,3,32,35,4.40766,-75.21135,baja
+P041,"Cádiz, Ibagué",sobre,0.6,3,35,40,4.42712,-75.21803,alta
+P042,"Picaleña, Ibagué",caja,4.5,35,24,24,4.41351,-75.18125,media
+P043,"Café Ibagué, Ibagué",caja,0.6,16,23,15,4.466,-75.22758,media
+P044,"Santa Helena, Ibagué",caja,26.3,48,60,87,4.42811,-75.19703,baja
+P045,"Arkala, Ibagué",sobre,0.18,3,32,45,4.42476,-75.23254,media
+P046,"Arkala, Ibagué",caja,1.7,23,35,28,4.42492,-75.22714,alta
+P047,"Arkala, Ibagué",caja,1.9,16,24,29,4.42396,-75.22964,media
+P048,"Centro, Ibagué",caja,16.1,36,47,64,4.43701,-75.22851,alta
+P049,"Alaska, Ibagué",caja,2.5,15,31,17,4.43205,-75.2402,alta
+P050,"Arkala, Ibagué",caja,39.6,53,42,78,4.42169,-75.23185,alta
+P051,"Arkala, Ibagué",caja,0.8,35,34,19,4.42311,-75.22923,baja
+P052,"Interlaken, Ibagué",sobre,0.34,3,24,45,4.40637,-75.207,baja
+P053,"Picaleña, Ibagué",caja,45.1,98,104,125,4.40668,-75.18867,alta
+P054,"Picaleña, Ibagué",caja,11.4,63,56,79,4.40991,-75.18897,media
+P055,"Boquerón, Ibagué",caja,44.1,42,46,86,4.45002,-75.2514,media
+P056,"Arkala, Ibagué",caja,1.1,35,35,21,4.41761,-75.22772,alta
+P057,"Combeima, Ibagué",caja,2.5,16,30,30,4.44021,-75.19846,media
+P058,"Santa Helena, Ibagué",caja,44.8,59,54,52,4.42941,-75.19667,media
+P059,"Ambalá, Ibagué",sobre,0.3,2,35,40,4.47383,-75.16651,media
+P060,"Santa Helena, Ibagué",caja,6.7,19,26,34,4.4246,-75.19828,media
+P061,"Jordán, Ibagué",caja,43.1,40,40,45,4.46163,-75.21515,media
+P062,"Arkala, Ibagué",caja,6.1,15,25,25,4.41942,-75.23387,baja
+P063,"Jordán, Ibagué",sobre,0.46,1,35,35,4.46352,-75.21543,media
+P064,"Cádiz, Ibagué",caja,2.6,16,18,36,4.42789,-75.21558,baja
+P065,"Picaleña, Ibagué",caja,103.1,71,107,138,4.41377,-75.18551,baja
+P066,"Santa Helena, Ibagué",caja,40.2,39,64,86,4.42976,-75.1986,media
+P067,"Piedra Pintada, Ibagué",caja,5.4,23,35,27,4.44737,-75.20568,media
+P068,"Arkala, Ibagué",sobre,0.33,1,40,45,4.41796,-75.22985,media
+P069,"Alaska, Ibagué",sobre,0.16,2,24,32,4.43697,-75.2404,media
+P070,"Alaska, Ibagué",caja,114.6,94,106,116,4.43091,-75.24193,media
+P071,"Combeima, Ibagué",caja,103.0,102,88,123,4.43771,-75.2035,baja
+P072,"Santa Helena, Ibagué",caja,39.4,65,53,64,4.42474,-75.19183,baja
+P073,"Centro, Ibagué",caja,47.3,101,117,90,4.43592,-75.2328,baja
+P074,"Café Ibagué, Ibagué",sobre,0.13,3,24,45,4.46978,-75.22701,media
+P075,"Café Ibagué, Ibagué",sobre,0.12,3,24,45,4.46268,-75.22279,media
+P076,"Piedra Pintada, Ibagué",caja,92.4,74,86,109,4.45101,-75.20477,media
+P077,"Arkala, Ibagué",sobre,0.35,2,35,40,4.41909,-75.22868,media
+P078,"Picaleña, Ibagué",sobre,0.58,1,32,35,4.4098,-75.18712,alta
+P079,"Interlaken, Ibagué",caja,20.5,36,55,89,4.40115,-75.21168,media
+P080,"Arkala, Ibagué",caja,19.5,50,46,57,4.41858,-75.22862,baja
+P081,"Picaleña, Ibagué",caja,1.9,30,34,34,4.40972,-75.18688,media
+P082,"Interlaken, Ibagué",caja,137.4,83,83,91,4.40778,-75.21305,alta
+P083,"La Pola, Ibagué",caja,44.9,58,50,52,4.44298,-75.24203,baja
+P084,"Alaska, Ibagué",caja,39.0,56,49,69,4.43053,-75.23878,baja
+P085,"Café Ibagué, Ibagué",caja,28.8,63,70,52,4.46335,-75.22898,baja
+P086,"Arkala, Ibagué",caja,15.2,57,41,75,4.41985,-75.22843,media
+P087,"Café Ibagué, Ibagué",caja,5.2,22,28,40,4.46354,-75.22609,media
+P088,"Arkala, Ibagué",caja,3.2,34,17,25,4.41728,-75.2345,media
+P089,"La Pola, Ibagué",caja,5.3,34,15,40,4.4394,-75.23777,baja
+P090,"Centro, Ibagué",caja,41.8,47,64,61,4.44151,-75.23534,baja
+P091,"Piedra Pintada, Ibagué",caja,30.5,57,66,54,4.45342,-75.20754,media
+P092,"Alaska, Ibagué",caja,17.2,59,52,55,4.43269,-75.23773,alta
+P093,"La Pola, Ibagué",sobre,0.28,2,24,32,4.44115,-75.23914,media
+P094,"Santa Helena, Ibagué",caja,25.1,39,47,71,4.42477,-75.19501,baja
+P095,"Picaleña, Ibagué",caja,4.8,24,24,23,4.41198,-75.18222,media
+P096,"Combeima, Ibagué",sobre,0.13,1,32,35,4.43659,-75.20202,media
+P097,"Picaleña, Ibagué",caja,25.6,38,41,45,4.41006,-75.18715,baja
+P098,"Café Ibagué, Ibagué",caja,2.0,34,21,33,4.46932,-75.22868,alta
+P099,"El Salado, Ibagué",caja,111.0,110,86,128,4.45759,-75.19192,media
+P100,"La Pola, Ibagué",sobre,0.19,2,32,32,4.44025,-75.24237,media
+P101,"Mirolindo, Ibagué",sobre,0.49,2,32,40,4.41548,-75.2135,alta
+P102,"Arkala, Ibagué",caja,23.2,57,52,62,4.42231,-75.23376,media
+P103,"Ambalá, Ibagué",caja,126.4,96,106,91,4.46934,-75.17359,baja
+P104,"Mirolindo, Ibagué",caja,51.4,80,107,117,4.41916,-75.21287,alta
+P105,"Mirolindo, Ibagué",sobre,0.35,3,32,40,4.41769,-75.2147,media
+P106,"Mirolindo, Ibagué",caja,3.4,17,20,18,4.4199,-75.21463,baja
+P107,"Santa Helena, Ibagué",sobre,0.55,3,32,35,4.42641,-75.1923,baja
+P108,"Arkala, Ibagué",caja,80.4,84,120,129,4.41769,-75.2293,baja
+P109,"Boquerón, Ibagué",caja,13.5,46,52,52,4.44946,-75.25025,baja
+P110,"Santa Helena, Ibagué",caja,5.0,18,25,27,4.42433,-75.1945,media
+P111,"Ambalá, Ibagué",sobre,0.26,3,35,35,4.47119,-75.17153,media
+P112,"Centro, Ibagué",caja,39.0,59,59,74,4.43493,-75.22831,baja
+P113,"Arkala, Ibagué",caja,5.4,31,29,31,4.41786,-75.23397,alta
+P114,"Piedra Pintada, Ibagué",caja,41.1,59,41,77,4.44666,-75.20313,media
+P115,"Piedra Pintada, Ibagué",caja,44.3,41,43,53,4.44621,-75.20847,media
+P116,"El Salado, Ibagué",sobre,0.51,2,32,35,4.45949,-75.18823,baja
+P117,"Combeima, Ibagué",caja,66.3,83,110,127,4.44224,-75.20035,media
+P118,"Alaska, Ibagué",caja,41.1,56,48,65,4.43198,-75.24241,alta
+P119,"Combeima, Ibagué",caja,27.3,49,67,80,4.43592,-75.19975,media
+P120,"Jordán, Ibagué",caja,44.6,43,51,69,4.45802,-75.21271,media
+`;
